@@ -1,11 +1,19 @@
 let katzDeli = [];
 
-function takeANumber(katzDeliLine, customerName){
-  const n = katzDeliLine.length + 1;
-  const greeting = `Welcome, ${customerName}. You are number ${n} in line.`;
-  katzDeliLine.push(customerName);
+// function takeANumber(katzDeliLine, customerName){
+//   const n = katzDeliLine.length + 1;
+//   const greeting = `Welcome, ${customerName}. You are number ${n} in line.`;
+//   katzDeliLine.push(customerName);
 
-  return greeting;
+//   return greeting;
+// }
+const n=0
+
+function takeANumber(katzDeliLine){
+  n++
+  const greeting = `You are number ${n} in line.`;
+  katzDeliLine.push(n);
+  
 }
 
 function nowServing(katzDeliLine){
